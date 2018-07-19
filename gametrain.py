@@ -9,7 +9,7 @@ from dateutil import tz
 from itertools import takewhile
 from collections import defaultdict
 
-from models import db, Player, Match
+# THIS DOESN't EXIST YET from models import db, Player, Match
 
 HANDLE_RE = '<@([A-z0-9]*)>'
 
@@ -285,11 +285,11 @@ class EloBot(object):
 
 if __name__ == '__main__':
 
-    
+
 
 
     print("connecting")
-    with open('config.json') as config_data: 
+    with open('config.json') as config_data:
         config = json.load(config_data)
 
     slack_client = SlackClient(config['slack_token'])
