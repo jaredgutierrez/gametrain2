@@ -284,7 +284,9 @@ class EloBot(object):
     #     return len(list(takewhile(lambda m: m.winner_handle == player_slack_id, matches)))
 
 if __name__ == '__main__':
+
     
+
 
     print("connecting")
     with open('config.json') as config_data: 
